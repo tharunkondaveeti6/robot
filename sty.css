@@ -1,0 +1,211 @@
+body{
+    background: linear-gradient(orange,white,green);
+    
+}
+.robot{
+    height:500px;;
+}
+.face{
+    height: 135px;
+    width: 170px;
+    background-color: chartreuse;
+    margin: auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    transition: width 2s ease;
+}
+.robot:hover .face{
+    width: 250px;
+    animation: movehead 2s infinite;
+}
+@keyframes movehead{
+    0%{
+        width: 180px;
+    }
+    25%{
+        width: 230px;
+    }
+    50%{
+        width: 180px;
+    }
+    75%{
+        width: 230px;
+    }
+    100%{
+        width: 180px;
+    }
+}
+.eye{
+    width: 175px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 6%;
+}
+.leye{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.reye{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    width: 280px;
+    margin: auto;
+}
+.hand1{
+    height: 100px;
+    width: 35px;
+    background-color: chartreuse;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition: transform 0.5s ease;
+}
+.robot:hover .hand1{
+    transform: rotate(90deg);
+    transform-origin: top center;
+    animation: movelarm1 0.5s infinite;
+}
+@keyframes movelarm1{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+.robot:hover .hand2{
+    transform: rotate(90deg);
+    transform-origin: top center;
+    animation: moverarm2 0.5s infinite;
+}
+@keyframes moverarm2{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+.center{
+    height:150px ;
+    width: 170px;
+    background-color: chartreuse;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    transition: transform 0.5s ease;
+}
+.robot:hover .center{
+    transform: rotate(120deg);
+    transform-origin: top center;
+    animation: movecenter 0.5s infinite;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+@keyframes movecenter{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+    25%{
+        transform: rotate(30deg);
+        transform-origin: center;
+    }
+    50%{
+        transform: rotate(60deg);
+        transform-origin: center;
+    }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(120deg);
+        transform-origin: center;
+    }
+}
+.hand2{
+    height: 100px;
+    width: 35px;
+    background-color: chartreuse;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 165px;
+    margin: auto;
+    margin-top: -25px;
+}
+.l{
+    height: 100px;
+    width: 35px;
+    background-color: chartreuse;
+    border-radius: 0 0 100px 100px;
+}
+.r{
+    height: 100px;
+    width: 35px;
+    background-color: chartreuse;
+    border-radius: 0 0 100px 100px;
+}
+.robot:hover .l{
+    transform: rotate(45deg);
+    transform-origin: top center;
+    animation: movelleg1 2s infinite;
+}
+@keyframes movelleg1{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(45deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+.robot:hover .r{
+    transform: rotate(45deg);
+    transform-origin: top center;
+    animation: moverleg2 2s infinite;
+}
+@keyframes moverleg2{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-45deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
